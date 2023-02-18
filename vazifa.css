@@ -7,6 +7,10 @@
     font-family: "lucida sans";
 }
 
+body{
+    overflow: auto;
+}
+
 img{
     height: 100px;
     width: 20%;
@@ -50,6 +54,10 @@ img{
     text-align: center;
     color: aqua;
     padding: 5px 5px;
+}
+
+.close{
+    display: none;
 }
 
 .navbar{
@@ -240,11 +248,11 @@ h1{
         right: 6%;
     }
 
-     .click.open.op{
+     .click.open.o{
         width: 30px;
-        position: fixed;
+        position: relative;
         top: 5.1%;
-        z-index: 30;
+        z-index: 1;
         cursor: pointer;
         right: 6%;
     }
@@ -263,6 +271,20 @@ h1{
         justify-content: center;
         align-items: center;
         float: right;
+    }
+
+    .close.active{
+        display: block;
+        cursor: pointer;
+        margin-right: 30px;
+        font-size: 30px;
+        position: absolute;
+        font-weight: bold;
+        padding: 4px;
+    }
+
+    .close:active{
+        color: red;
     }
 
     .line{
